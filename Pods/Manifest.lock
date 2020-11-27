@@ -1,0 +1,42 @@
+PODS:
+  - Alamofire (4.9.1)
+  - EmptyDataSet-Swift (4.2.0)
+  - FSPagerView (0.8.3)
+  - HandyJSON (5.0.2)
+  - Loaf (0.7.0)
+  - Parchment (2.4.0)
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - EmptyDataSet-Swift (~> 4.2.0)
+  - FSPagerView
+  - HandyJSON (~> 5.0.2)
+  - Loaf
+  - Parchment
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - EmptyDataSet-Swift
+    - FSPagerView
+    - HandyJSON
+    - Loaf
+    - Parchment
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  EmptyDataSet-Swift: 1fa0b35f530a35f852ecb2b53564728b0c300aaf
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Loaf: d69937cd00649f3fa260beb8b7aef0a1feb861ef
+  Parchment: 002785473861582385db5c6725165353c500198e
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
+
+PODFILE CHECKSUM: a91890ff85fb79247f9e6f7aeeeb7c176b5f5204
+
+COCOAPODS: 1.9.1
