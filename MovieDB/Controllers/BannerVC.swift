@@ -11,7 +11,7 @@ import FSPagerView
 import Loaf
 
 class BannerVC: UIViewController {
-    fileprivate let movieVM = MovieVM()
+    fileprivate let movieVM = MovieData()
     fileprivate var isLoading: Bool = false
     @IBOutlet weak var viewPager: FSPagerView!{
         didSet{

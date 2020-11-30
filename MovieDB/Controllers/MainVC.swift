@@ -13,7 +13,7 @@ import FSPagerView
 
 class MainVC: UIViewController {
 
-    let genreVM = GenreVM()
+    let genreVM = GenreData()
     
     @IBOutlet weak var tableView: UITableView!{
         didSet{

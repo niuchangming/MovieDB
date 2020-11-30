@@ -8,7 +8,7 @@
 
 import HandyJSON
 
-class GenreVM: HandyJSON {
+class GenreData: HandyJSON {
     var genres = [Genre]()
     
     required init() {}
@@ -17,7 +17,7 @@ class GenreVM: HandyJSON {
         let api = String(format: "%@/3/genre/movie/list?api_key=%@", Constants.HOST, Constants.API_KEY)
 
         ConnectionManager.shared.request(method: .get, url: api, params: nil, succeed: { (responseJson) in
-            if let model = GenreVM.deserialize(from: responseJson as? NSDictionary) {
+            if let model = GenreData.deserialize(from: responseJson as? NSDictionary) {
                 self.genres = model.genres
                 completed(.success)
             }

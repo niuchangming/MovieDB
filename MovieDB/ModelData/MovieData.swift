@@ -8,7 +8,7 @@
 
 import HandyJSON
 
-class MovieVM: HandyJSON {
+class MovieData: HandyJSON {
     var page: Int = 0
     var totalPages: Int = 0
     var movies = [Movie]()
@@ -19,7 +19,7 @@ class MovieVM: HandyJSON {
         let api = String(format: "%@/3/movie/now_playing?api_key=%@&page=%i", Constants.HOST, Constants.API_KEY, page + 1)
 
         ConnectionManager.shared.request(method: .get, url: api, params: nil, succeed: { (responseJson) in
-            if let model = MovieVM.deserialize(from: responseJson as? NSDictionary) {
+            if let model = MovieData.deserialize(from: responseJson as? NSDictionary) {
                 self.totalPages = model.totalPages
                 self.page = model.page
                 self.movies = model.movies
